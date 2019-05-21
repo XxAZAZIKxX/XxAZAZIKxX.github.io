@@ -1,0 +1,129 @@
+﻿.list-phone {
+    max-width: 1600px;
+    max-height: 1500px;
+    min-height:500px;
+    background-color: #120749;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phone {
+    background-color: white;
+    margin:10px;
+    height: 285px;
+    width: 190px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.phone__img {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+.phone__info {
+    position: relative;
+    top: 65%;
+    left: 25%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.phone-price {
+    position: relative;
+    left: 15%;
+    margin: 5px;
+}
+
+.phone__button {
+    width: 150px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    right: 12%;
+    border-radius: 30px;
+}
+
+.phone__button-text {
+    color: white;
+    font-family: sans-serif;
+    position:absolute;
+    left:33%;
+    margin-top:5px;
+}
+
+.phone__button:hover{
+    opacity:.5;
+    cursor:pointer;
+}
+
+.not-available{
+    opacity:.5;
+}
+.na{
+    background-color:grey;
+}
+.img-na{
+    position:absolute;
+    left:10%;
+    bottom:1%;
+    opacity:.7;
+}
+
+.phone__info span{
+    color:#ff9400;
+}
+
+.super-price {
+    position: relative;
+    bottom: 182px;
+    left: 44%;
+    background: rgba(255, 0, 0, 0.5);
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 100px;
+    height: 45px;
+    padding-top: 10px;
+}
+
+.super-price p{
+    margin:0;
+    padding-left:20px;
+    color:white;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+
+.weekly {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: rgba(255, 0, 0, 0.5);
+    position: relative;
+    left: 10%;
+    bottom: 55px;
+}
+
+.weekly-img {
+    left: 22px;
+    top: 5px;
+    position: relative;
+}
+
+.weekly p {
+    margin: 0;
+    padding-left: 17px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.na:hover {
+    cursor: not-allowed;
+}
