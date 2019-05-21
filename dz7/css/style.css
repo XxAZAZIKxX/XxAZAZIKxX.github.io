@@ -1,0 +1,75 @@
+﻿.container {
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    margin: 5px;
+}
+
+.box-red {
+    background-color: red;
+    position: relative;
+    left: 550px;
+    top: 300px;
+}
+
+.box-green {
+    background-color: lawngreen;
+    position: relative;
+    left: 615px;
+    top: 200px;
+}
+
+.box-blue {
+    background-color: blue;
+    position: relative;
+    left: 545px;
+    top: 180px;
+}
+
+.box-yellow {
+    background-color: yellow;
+    position: relative;
+    left: 625px;
+    top: 85px;
+}
+
+.box__item {
+    top: 60%;
+    left: 60%;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 100%;
+    transition:transform .3s;
+}
+
+.box__item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color:lightgrey;
+}
+
+.box:hover {
+    z-index: 2;
+}
+.box__item:hover{
+    transform:rotate(90deg);
+}
+
+.box__item span:first-child {
+    transform: translate(-50%, -50%);
+}
+
+.box__item span:last-child {
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
