@@ -7,6 +7,10 @@ li {
     list-style-type: none;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .headerWrapper {
     background-color: black;
     min-height: 50px;
@@ -26,16 +30,16 @@ li {
     justify-content: center;
 }
 
-.menuBlock__logo p:hover {
-    transform:rotate(180deg) rotateX(90deg);
-}
+    .menuBlock__logo p:hover {
+        transform: rotate(180deg) rotateX(90deg);
+    }
 
     .menuBlock__logo p {
         color: white;
         font-size: 25px;
         font-family: sans-serif;
         font-weight: bold;
-    transition:transform .5s;
+        transition: transform .5s;
     }
 
 .menuBlock__list {
@@ -53,14 +57,14 @@ li {
         transition: color .3s;
     }
 
-    .menuBlock__item a:hover {
-        color:greenyellow;
-    }
+        .menuBlock__item a:hover {
+            color: greenyellow;
+        }
 
 .menuBlock__btn {
     display: flex;
     justify-content: flex-end;
-    margin-left:250px;
+    margin-left: 250px;
 }
 
 .SignUp__btn {
@@ -89,21 +93,39 @@ li {
     background-color: #1cb88b;
     display: flex;
     height: 150px;
+    padding-left:50px;
     padding-top: 15px;
 }
 
 .serv-info__text-block {
     width: 500px;
-    position: relative;
 }
 
-.serv-info__text {
-    position: absolute;
-    left: 15%;
-    top: 5%;
+.sectionTitle {
+
 }
 
-    .serv-info__text p {
+    .sectionTitle h2 {
+        color: black;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 1px 0;
+        text-transform: uppercase;
+    }
+    .sectionTitle span {
+        display: block;
+        width: 175px;
+        height: 5px;
+        margin-top: 5px;
+        background-color: black;
+    }
+
+.services {
+    color:white;
+}
+
+    .services h2 {
         color: white;
         font-family: sans-serif;
         font-size: 30px;
@@ -111,11 +133,7 @@ li {
         margin: 1px 0;
     }
 
-    .serv-info__text span {
-        display: block;
-        width: 175px;
-        height: 3px;
-        margin-top: 5px;
+    .services span {
         background-color: white;
     }
 
@@ -181,13 +199,237 @@ li {
         height: auto;
     }
 
+.ourWorks {
+    background-color: #ebebeb;
+}
+
+.ourWorksWrapper{
+    padding:50px;
+}
+
+
+.ourWorks__btns button {
+    margin: 10px;
+    border: 3px solid #1cb88b;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    width: 75px;
+    transition: background-color .3s;
+}
+
+.ourWorks__btns button:focus{
+    background-color:#1cb88b;
+    color:white;
+}
+
+.ourWorks__items {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.workCard {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-color: #898989;
+    margin:15px;
+}
+
+.workCard__img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+}
+
+.workCard__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.workCard__descr {
+    text-align: center;
+    background: white;
+    padding: 15px 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width:80%;
+    transition: transform .3s, opacity .3s;
+    transform: translateY(100%);
+}
+
+.workCard__title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1cb88b;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.workCard__text {
+    color: #898989;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.workCard:hover .workCard__descr {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.workCard:hover .workCard__img {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.ourSkillsWrapper {
+    margin: 50px;
+    min-height:550px;
+}
+
+.ourSkillsST{
+    padding-left:75px;
+}
+
+.ourSkills__info {
+    margin-top: 20px;
+    display: flex;
+}
+
+.ourSkills__graphs {
+    display: flex;
+}
+
+.ourSkills__graph {
+    margin: 0 25px;
+    position: relative;
+}
+
+    .ourSkills__graph img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ourSkills__graph p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: #1cb88b;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+.ourSkills__text {
+    padding-left: 100px;
+    max-width:800px;
+}
+
+    .ourSkills__text h3 {
+        text-transform: uppercase;
+        color: #1cb88b;
+        margin: 15px 0;
+    }
+
+.ourSkills__item-btn button {
+    background-color: white;
+    border: 1px solid #898989;
+    border-radius: 5px;
+    font-weight:bold;
+    width: 100%;
+    height: 25px;
+}
+
+.ourSkills__item-btn {
+    width: 300px;
+    min-height: 45px;
+}
+.ourSkills__item-btn button{
+    width: 300px;
+    min-height: 35px;
+}
+
+.ourSkills__item-btn button:hover{
+    color: #5f00fb;
+}
+.ourSkills__item-text {
+    margin:10px;
+    height:0;
+    overflow: hidden;
+    transition:height .3s, transform .4s, opacity .5s;
+    transform:translateX(25%);
+    opacity:0;
+}
+
+.ourSkills__item-btn:hover .ourSkills__item-text {
+    height:150px;
+    transform:translateX(0);
+    opacity:1;
+}
+.contactUs {
+    background-color: #ebebeb;
+    padding-left: 50px;
+    padding-top:50px;
+}
+
+.contactUs-info{
+}
+
+    .contactUs-info p {
+        color: #898989;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .contactUs-info p:first-child {
+        margin-top:10px;
+    }
+
+.contactUs-info ul{
+    display:flex;
+    margin-top:10px;
+}
+
+.contactUs-inputFields div{
+    margin:10px;
+}
+
+.contactUs-inputFields button {
+    height: 55px;
+    width: 175px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    color: #1cb88b;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: serif;
+    transition:border-color .3s;
+}
+
+.contactUs-inputFields button:hover {
+    border-color: #1cb88b;
+}
+
+.contactUs-info li {
+    margin: 0 5px;
+}
+
 @media screen and (max-width:860px) {
     .menuBlock__logo {
         width: 100%;
     }
-    .menuBlock__btn{
-        margin-left:0;
+
+    .menuBlock__btn {
+        margin-left: 0;
     }
+
     .menuBlock {
         justify-content: center;
     }
@@ -198,6 +440,7 @@ li {
         flex-wrap: wrap;
         height: 350px;
         justify-content: center;
+        padding-left: 25px;
     }
 }
 
@@ -229,6 +472,7 @@ li {
         flex-wrap: wrap;
         height: 500px;
         justify-content: center;
+        padding-left: 10px;
     }
 
     .serv-info__list {
