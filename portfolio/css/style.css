@@ -9,12 +9,19 @@ li {
 
 body {
     font-family: sans-serif;
+    justify-content:center;
 }
 
-.headerWrapper {
+.wrapper{
+    margin:0 auto;
+    max-width:1600px;
+    padding-left:15px;
+}
+
+.mainHeader {
+    padding-top:10px;
     background-color: black;
     min-height: 50px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -26,12 +33,11 @@ body {
 
 .menuBlock__logo {
     min-width: 350px;
-    display: flex;
     justify-content: center;
 }
 
     .menuBlock__logo p:hover {
-        transform: rotate(180deg) rotateX(90deg);
+        transform: rotateX(90deg);
     }
 
     .menuBlock__logo p {
@@ -83,17 +89,17 @@ body {
     }
 
 .headerContentBlock {
-    max-width: 1560px;
     max-height: 700px;
-    min-height: 100px;
     background-color: dimgrey;
 }
 
-.servWrapper {
+.services{
     background-color: #1cb88b;
+}
+
+.servicesContainer {
     display: flex;
     height: 150px;
-    padding-left:50px;
     padding-top: 15px;
 }
 
@@ -102,17 +108,17 @@ body {
 }
 
 .sectionTitle {
-
 }
 
     .sectionTitle h2 {
         color: black;
         font-family: sans-serif;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: bold;
         margin: 1px 0;
         text-transform: uppercase;
     }
+
     .sectionTitle span {
         display: block;
         width: 175px;
@@ -122,7 +128,7 @@ body {
     }
 
 .services {
-    color:white;
+    color: white;
 }
 
     .services h2 {
@@ -203,8 +209,8 @@ body {
     background-color: #ebebeb;
 }
 
-.ourWorksWrapper{
-    padding:50px;
+.ourWorksWrapper {
+    padding: 50px;
 }
 
 
@@ -217,15 +223,17 @@ body {
     transition: background-color .3s;
 }
 
-.ourWorks__btns button:focus{
-    background-color:#1cb88b;
-    color:white;
-}
+    .ourWorks__btns button:focus {
+        background-color: #1cb88b;
+        color: white;
+    }
 
 .ourWorks__items {
     display: flex;
     flex-wrap: wrap;
-} 
+}
+
+
 
 .workCard {
     width: 250px;
@@ -233,7 +241,7 @@ body {
     position: relative;
     overflow: hidden;
     background-color: #898989;
-    margin:15px;
+    margin: 15px;
 }
 
 .workCard__img {
@@ -242,12 +250,12 @@ body {
     transition: transform .3s;
 }
 
-.workCard__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+    .workCard__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 
 
 .workCard__descr {
@@ -258,7 +266,7 @@ body {
     left: 0;
     bottom: 0;
     opacity: 0;
-    width:80%;
+    width: 80%;
     transition: transform .3s, opacity .3s;
     transform: translateY(100%);
 }
@@ -287,13 +295,120 @@ body {
     opacity: 1;
 }
 
-.ourSkillsWrapper {
-    margin: 50px;
-    min-height:550px;
+.ourTeamWrapper {
+    max-width: 1250px;
 }
 
-.ourSkillsST{
-    padding-left:75px;
+.ourTeamST {
+    margin: 50px 0 0 100px;
+}
+
+.ourTeam__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.TeamCard {
+    border-radius: 50px;
+    width: 300px;
+    padding: 20px 12px 20px 50px;
+    margin: 25px;
+}
+
+.TeamCardPhoto {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 50px;
+    transition: transform .3s;
+}
+
+    .TeamCardPhoto:hover {
+        cursor: pointer;
+        transform: translateX(-25%);
+    }
+
+.TeamCardPhoto__photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+}
+
+    .TeamCardPhoto__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+.TeamCardPhoto__icons {
+    display: flex;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+
+.TeamCardPhoto:hover .TeamCardPhoto__icons {
+    margin-left: 0;
+    opacity: 1;
+    transform: translateX(80%);
+}
+
+.TeamCardPhoto__icon {
+    margin-right: 10px;
+}
+
+    .TeamCardPhoto__icon:last-child {
+        margin-right: 0;
+    }
+
+    .TeamCardPhoto__icon a {
+        border-radius: 50%;
+        background: #1cb88b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+        .TeamCardPhoto__icon a img {
+            height: 50%;
+            width: auto;
+        }
+
+.TeamCardInfo {
+}
+
+.TeamCardInfo__title {
+    color: #1cb88b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.TeamCardInfo__prof {
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.TeamCardInfo__about {
+}
+
+
+.ourSkills{
+    margin: 50px;
+    min-height: 550px;
+}
+
+.ourSkillsST {
+    padding-left: 75px;
 }
 
 .ourSkills__info {
@@ -327,7 +442,7 @@ body {
 
 .ourSkills__text {
     padding-left: 100px;
-    max-width:800px;
+    max-width: 800px;
 }
 
     .ourSkills__text h3 {
@@ -340,7 +455,7 @@ body {
     background-color: white;
     border: 1px solid #898989;
     border-radius: 5px;
-    font-weight:bold;
+    font-weight: bold;
     width: 100%;
     height: 25px;
 }
@@ -349,35 +464,39 @@ body {
     width: 300px;
     min-height: 45px;
 }
-.ourSkills__item-btn button{
-    width: 300px;
-    min-height: 35px;
-}
 
-.ourSkills__item-btn button:hover{
-    color: #5f00fb;
-}
+    .ourSkills__item-btn button {
+        width: 300px;
+        min-height: 35px;
+    }
+
+        .ourSkills__item-btn button:hover {
+            color: #5f00fb;
+        }
+
 .ourSkills__item-text {
-    margin:10px;
-    height:0;
+    margin: 10px;
+    height: 0;
     overflow: hidden;
-    transition:height .3s, transform .4s, opacity .5s;
-    transform:translateX(25%);
-    opacity:0;
+    transition: height .3s, transform .4s, opacity .5s;
+    transform: translateX(25%);
+    opacity: 0;
 }
 
 .ourSkills__item-btn:hover .ourSkills__item-text {
-    height:150px;
-    transform:translateX(0);
-    opacity:1;
+    height: 150px;
+    transform: translateX(0);
+    opacity: 1;
 }
+
 .contactUs {
     background-color: #ebebeb;
     padding-left: 50px;
-    padding-top:50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
-.contactUs-info{
+.contactUs-info {
 }
 
     .contactUs-info p {
@@ -386,17 +505,17 @@ body {
         font-size: 15px;
     }
 
-    .contactUs-info p:first-child {
-        margin-top:10px;
+        .contactUs-info p:first-child {
+            margin-top: 10px;
+        }
+
+    .contactUs-info ul {
+        display: flex;
+        margin-top: 10px;
     }
 
-.contactUs-info ul{
-    display:flex;
-    margin-top:10px;
-}
-
-.contactUs-inputFields div{
-    margin:10px;
+.contactUs-inputFields div {
+    margin: 10px 10px 0 10px;
 }
 
 .contactUs-inputFields button {
@@ -410,16 +529,43 @@ body {
     font-weight: bold;
     font-size: 15px;
     font-family: serif;
-    transition:border-color .3s;
+    transition: border-color .3s;
 }
 
-.contactUs-inputFields button:hover {
-    border-color: #1cb88b;
-}
+    .contactUs-inputFields button:hover {
+        border-color: #1cb88b;
+    }
 
 .contactUs-info li {
     margin: 0 5px;
 }
+
+.mainFooter {
+    background-color: black;
+}
+
+.footerWrapper {
+    background-color: black;
+}
+
+.footerLogo {
+    margin: 25px;
+}
+
+
+.footerText p {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 
 @media screen and (max-width:860px) {
     .menuBlock__logo {

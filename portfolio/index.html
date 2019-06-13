@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="mainHeader">
-        <div class="headerWrapper">
+    <header class="mainHeader" id="Top">
+        <div class="wrapper">
             <section class="menuBlock">
                 <div class="menuBlock__logo">
-                    <p>IDDO</p>
+                    <p>SSD</p>
                 </div>
                 <div class="menuBlock__menu">
                     <ul class="menuBlock__list">
@@ -31,54 +31,58 @@
         <section class="headerContentBlock"></section>
     </header>
     <section class="services" id="Services">
-        <div class="servWrapper">
-            <div class="serv-info__text-block">
-                <div class="sectionTitle services">
-                    <h2>OUR</h2>
-                    <h2>SERVICES.</h2>
-                    <span></span>
-                </div>
-            </div>
-            <div class="serv-info__list">
-                <div class="serv-list__item">
-                    <span>
-                        <img class="serv-list__img" src="img/7.png">
-                    </span>
-                    <div class="serv-list__item-text">
-                        <h1>Feature 1</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="wrapper">
+            <div class="servicesContainer">
+                <div class="serv-info__text-block">
+                    <div class="sectionTitle services">
+                        <h2>OUR</h2>
+                        <h2>SERVICES.</h2>
+                        <span></span>
                     </div>
                 </div>
-                <div class="serv-list__item">
-                    <span>
-                        <img class="serv-list__img" src="img/8.png">
-                    </span>
-                    <div class="serv-list__item-text">
-                        <h1>Feature 2</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="serv-info__list">
+                    <div class="serv-list__item">
+                        <span>
+                            <img class="serv-list__img" src="img/7.png">
+                        </span>
+                        <div class="serv-list__item-text">
+                            <h1>Feature 1</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="serv-list__item">
-                    <span>
-                        <img class="serv-list__img" src="img/9.png">
-                    </span>
-                    <div class="serv-list__item-text">
-                        <h1>Feature 3</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="serv-list__item">
+                        <span>
+                            <img class="serv-list__img" src="img/8.png">
+                        </span>
+                        <div class="serv-list__item-text">
+                            <h1>Feature 2</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="serv-list__item">
-                    <span>
-                        <img class="serv-list__img" src="img/10.png">
-                    </span>
-                    <div class="serv-list__item-text">
-                        <h1>Feature 4</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="serv-list__item">
+                        <span>
+                            <img class="serv-list__img" src="img/9.png">
+                        </span>
+                        <div class="serv-list__item-text">
+                            <h1>Feature 3</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="serv-list__item">
+                        <span>
+                            <img class="serv-list__img" src="img/10.png">
+                        </span>
+                        <div class="serv-list__item-text">
+                            <h1>Feature 4</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="servMenu">
+    </section>
+    <nav class="servMenu">
+        <div class="wrapper">
             <ul class="servMenu__list">
                 <li class="servMenu__item">
                     <a href="#">
@@ -110,10 +114,10 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-    </section>
+        </div>
+    </nav>
     <section class="ourWorks" id="Portfolio">
-        <div class="ourWorksWrapper">
+        <div class="wrapper">
             <div class="sectionTitle">
                 <h2>our</h2>
                 <h2>works.</h2>
@@ -168,33 +172,120 @@
         </div>
     </section>
     <section class="ourTeam" id="About">
-        <div class="ourTeamWrapper">
-            <div class="sectionTitle">
+        <div class="wrapper">
+            <div class="sectionTitle ourTeamST">
                 <h2>Our</h2>
                 <h2>team.</h2>
                 <span></span>
             </div>
-            <div class="TeamCard">
-                <div class="TeamCardPhoto">
-                    <div class="TeamCardPhoto__photo">
-                        <img />
+            <div class="ourTeam__cards">
+                <div class="TeamCard">
+                    <div class="TeamCardPhoto">
+                        <div class="TeamCardPhoto__photo">
+                            <img src="img/ava.png" />
+                        </div>
+                        <ul class="TeamCardPhoto__icons">
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="img/icons/twitter.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://facebook.com/" target="_blank">
+                                    <img src="img/icons/facebook.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://instagram.com/" target="_blank">
+                                    <img src="img/icons/instagram.png" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="TeamCardPhoto__icons">
-
+                    <div class="TeamCardInfo">
+                        <h3 class="TeamCardInfo__title">Michael Joe</h3>
+                        <p class="TeamCardInfo__prof">CEO & Founder</p>
+                        <p class="TeamCard__about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris.
+                        </p>
                     </div>
                 </div>
-                <div class="TeamCardInfo">
-                    <h3 class="TeamCardInfo__title"></h3>
-                    <p class="TeamCardInfo__prof"></p>
-                    <p class="TeamCard__about"></p>
+                <div class="TeamCard">
+                    <div class="TeamCardPhoto">
+                        <div class="TeamCardPhoto__photo">
+                            <img src="img/ava.png" />
+                        </div>
+                        <ul class="TeamCardPhoto__icons">
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="img/icons/twitter.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://facebook.com/" target="_blank">
+                                    <img src="img/icons/facebook.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://instagram.com/" target="_blank">
+                                    <img src="img/icons/instagram.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="TeamCardInfo">
+                        <h3 class="TeamCardInfo__title">Jeremy Scott</h3>
+                        <p class="TeamCardInfo__prof">Designer</p>
+                        <p class="TeamCard__about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris.
+                        </p>
+                    </div>
+                </div>
+                <div class="TeamCard">
+                    <div class="TeamCardPhoto">
+                        <div class="TeamCardPhoto__photo">
+                            <img src="img/ava.png" />
+                        </div>
+                        <ul class="TeamCardPhoto__icons">
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="img/icons/twitter.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://facebook.com/" target="_blank">
+                                    <img src="img/icons/facebook.png" />
+                                </a>
+                            </li>
+                            <li class="TeamCardPhoto__icon">
+                                <a href="https://instagram.com/" target="_blank">
+                                    <img src="img/icons/instagram.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="TeamCardInfo">
+                        <h3 class="TeamCardInfo__title">Justin West</h3>
+                        <p class="TeamCardInfo__prof">Manager</p>
+                        <p class="TeamCard__about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="TeamCard"></div>
-            <div class="TeamCard"></div>
         </div>
     </section>
     <section class="ourSkills">
-        <div class="ourSkillsWrapper">
+        <div class="wrapper">
             <div class="sectionTitle ourSkillsST">
                 <h2>OUR</h2>
                 <h2>SKILLS.</h2>
@@ -271,38 +362,57 @@
         </div>
     </section>
     <section class="contactUs" id="Contacts">
-        <div class="sectionTitle">
-            <h2>CONTACT</h2>
-            <h2>US.</h2>
-            <span></span>
-        </div>
-        <div class="contactUs-info">
-            <p>123A Building, Road Street, Orlando District, US </p>
-            <p>+01 234 567 89</p>
-            <ul>
-                <li><img src="img/twitter.png" /></li>
-                <li><img src="img/facebook.png" /></li>
-                <li><img src="img/googleplus.png" /></li>
-                <li><img src="img/pinterest.png" /></li>
-                <li><img src="img/instagram.png" /></li>
-                <li><img src="img/youtube.png" /></li>
-                <li><img src="img/skype.png" /></li>
-                <li><img src="img/browser.png" /></li>
-            </ul>
-        </div>
-        <form class="contactUs-form">
-            <div class="contactUs-inputFields">
-                <div>
-                    <input type="email" placeholder="EMAIL" name="Email" style="border-color:black; color:black; height:25px" />
-                    <input type="text" placeholder="NAME" name="Name" style="border-color:black; color:black; height:25px" />
+        <div class="wrapper">
+            <div class="sectionTitle">
+                <h2>CONTACT</h2>
+                <h2>US.</h2>
+                <span></span>
+            </div>
+            <div class="contactUs-info">
+                <p>123A Building, Road Street, Orlando District, US </p>
+                <p>+01 234 567 89</p>
+                <ul>
+                    <li><img src="img/twitter.png" /></li>
+                    <li><img src="img/facebook.png" /></li>
+                    <li><img src="img/googleplus.png" /></li>
+                    <li><img src="img/pinterest.png" /></li>
+                    <li><img src="img/instagram.png" /></li>
+                    <li><img src="img/youtube.png" /></li>
+                    <li><img src="img/skype.png" /></li>
+                    <li><img src="img/browser.png" /></li>
+                </ul>
+            </div>
+            <form class="contactUs-form">
+                <div class="contactUs-inputFields">
+                    <div>
+                        <input type="email" placeholder="EMAIL" name="Email" style="border-color:black; color:black; height:25px" />
+                        <input type="text" placeholder="NAME" name="Name" style="border-color:black; color:black; height:25px" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="MESSAGE" name="Message" style="width:346px; height:50px; border-color:black; color:black" />
+                        <button>Submit</button>
+                    </div>
                 </div>
-                <div>
-                    <input type="text" placeholder="MESSAGE" name="Message" style="width:346px; height:50px; border-color:black; color:black" />
-                    <button>Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="mainFooter">
+        <div class="wrapper">
+            <div class="menuBlock__logo">
+                <div class="footerLogo">
+                    <p>SSD</p>
                 </div>
             </div>
-        </form>
-    </section>
-    <footer class="mainFooter"></footer>
+            <div class="footerText">
+                <p>© 2019 SSD. All rights resevered.</p>
+                <p>Design by AZAZIK</p>
+            </div>
+            <div class="footerBtn">
+                <a href="#Top">
+                    <img src="img/to-top.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
