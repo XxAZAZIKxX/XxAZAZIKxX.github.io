@@ -9,30 +9,41 @@ li {
 
 body {
     font-family: sans-serif;
-    justify-content:center;
+    justify-content: center;
 }
 
-.wrapper{
-    margin:0 auto;
-    max-width:1600px;
-    padding-left:15px;
+input::-moz-placeholder {
+    color: black;
+    font-weight:bold;
+}
+
+input::-webkit-input-placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding:0 50px;
 }
 
 .mainHeader {
-    padding-top:10px;
+    padding-top: 10px;
     background-color: black;
     min-height: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menuBlock {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content:space-around;
 }
 
 .menuBlock__logo {
     min-width: 350px;
+    display:flex;
     justify-content: center;
 }
 
@@ -93,13 +104,12 @@ body {
     background-color: dimgrey;
 }
 
-.services{
+.services {
     background-color: #1cb88b;
 }
 
 .servicesContainer {
     display: flex;
-    height: 150px;
     padding-top: 15px;
 }
 
@@ -110,7 +120,7 @@ body {
 .sectionTitle {
 }
 
-    .sectionTitle h2 {
+.sectionTitle h2 {
         color: black;
         font-family: sans-serif;
         font-size: 35px;
@@ -119,7 +129,7 @@ body {
         text-transform: uppercase;
     }
 
-    .sectionTitle span {
+.sectionTitle span {
         display: block;
         width: 175px;
         height: 5px;
@@ -131,7 +141,7 @@ body {
     color: white;
 }
 
-    .services h2 {
+.services h2 {
         color: white;
         font-family: sans-serif;
         font-size: 30px;
@@ -139,7 +149,7 @@ body {
         margin: 1px 0;
     }
 
-    .services span {
+.services span {
         background-color: white;
     }
 
@@ -181,8 +191,9 @@ body {
 }
 
 .serv-list__item {
-    width: 50%;
+    width: 45%;
     display: flex;
+    margin:10px;
 }
 
 .serv-list__item-text {
@@ -209,10 +220,6 @@ body {
     background-color: #ebebeb;
 }
 
-.ourWorksWrapper {
-    padding: 50px;
-}
-
 
 .ourWorks__btns button {
     margin: 10px;
@@ -231,13 +238,12 @@ body {
 .ourWorks__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
 }
 
-
-
 .workCard {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     background-color: #898989;
@@ -272,7 +278,7 @@ body {
 }
 
 .workCard__title {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     color: #1cb88b;
     text-transform: uppercase;
@@ -281,7 +287,7 @@ body {
 
 .workCard__text {
     color: #898989;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -300,7 +306,7 @@ body {
 }
 
 .ourTeamST {
-    margin: 50px 0 0 100px;
+    margin-top:50px;
 }
 
 .ourTeam__cards {
@@ -311,7 +317,7 @@ body {
 
 .TeamCard {
     border-radius: 50px;
-    width: 300px;
+    max-width: 365px;
     padding: 20px 12px 20px 50px;
     margin: 25px;
 }
@@ -402,22 +408,20 @@ body {
 }
 
 
-.ourSkills{
-    margin: 50px;
+.ourSkills {
     min-height: 550px;
-}
-
-.ourSkillsST {
-    padding-left: 75px;
 }
 
 .ourSkills__info {
     margin-top: 20px;
     display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
 }
 
 .ourSkills__graphs {
     display: flex;
+    flex-wrap:wrap;
 }
 
 .ourSkills__graph {
@@ -491,7 +495,6 @@ body {
 
 .contactUs {
     background-color: #ebebeb;
-    padding-left: 50px;
     padding-top: 50px;
     padding-bottom: 25px;
 }
@@ -544,9 +547,6 @@ body {
     background-color: black;
 }
 
-.footerWrapper {
-    background-color: black;
-}
 
 .footerLogo {
     margin: 25px;
@@ -582,12 +582,6 @@ body {
 }
 
 @media screen and (max-width:750px) {
-    .servWrapper {
-        flex-wrap: wrap;
-        height: 350px;
-        justify-content: center;
-        padding-left: 25px;
-    }
 }
 
 @media screen and (max-width:430px) {
@@ -611,14 +605,6 @@ body {
 
     .menuBlock__btn {
         margin-bottom: 5px;
-    }
-
-
-    .servWrapper {
-        flex-wrap: wrap;
-        height: 500px;
-        justify-content: center;
-        padding-left: 10px;
     }
 
     .serv-info__list {
