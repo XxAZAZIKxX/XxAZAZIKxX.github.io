@@ -635,6 +635,9 @@ textarea::-webkit-input-placeholder {
 
 .ourSkills__btns{
     margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .ourSkills__item-btn button {
@@ -921,5 +924,21 @@ textarea::-webkit-input-placeholder {
 
     .contactUs-inputFields button{
         margin-left:0;
+    }
+
+    .ourSkills__item-btn{
+        width:unset;
+    }
+    .ourSkills__item-text {
+        transform: translateX(0);
+    }
+    .ourSkills__item-btn button {
+        width: 200px;
+        min-height: 45px;
+    }
+    .ourSkills__item-btn:hover .ourSkills__item-text {
+        height: 200px;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
