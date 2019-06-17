@@ -151,6 +151,44 @@ textarea::-webkit-input-placeholder {
     font-weight:bold;
 }
 
+.burgerMenu{
+    display:none;
+    overflow:hidden;
+}
+
+.burgerMenu__list{
+    height:0;
+    transition:height .3s;
+}
+
+.burgerBtn {
+    background-color: black;
+    color: #00ff6b;
+    border-radius: 10px;
+    border: solid #00ff6b;
+    width: 75px;
+    height: 30px;
+    margin-bottom: 15px;
+    transition: background-color .3s;
+}
+
+.burgerBtn:hover {
+    background-color: #00ff6b;
+    color: black;
+}
+
+.burgerMenu__item a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: color .3s;
+}
+
+.burgerMenu__item a:hover {
+    color: greenyellow;
+} 
+
+
 .mainHeader {
     padding-top: 10px;
     background-color: black;
@@ -437,12 +475,13 @@ textarea::-webkit-input-placeholder {
 .ourTeam__cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
 }
 
 
 .TeamCard {
     border-radius: 50px;
-    max-width: 365px;
+    max-width: 300px;
     padding: 20px 12px 20px 50px;
     margin: 25px;
 }
@@ -570,6 +609,20 @@ textarea::-webkit-input-placeholder {
     font-size: 25px;
 }
 
+.ourSkills__item-text {
+    margin: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s, transform .4s, opacity .5s;
+    transform: translateX(25%);
+    opacity: 0;
+}
+.ourSkills__item-btn:hover .ourSkills__item-text {
+    height: 150px;
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .ourSkills__text {
     max-width: 800px;
 }
@@ -607,20 +660,7 @@ textarea::-webkit-input-placeholder {
     color: #5f00fb;
 }
 
-.ourSkills__item-text {
-    margin: 10px;
-    height: 0;
-    overflow: hidden;
-    transition: height .3s, transform .4s, opacity .5s;
-    transform: translateX(25%);
-    opacity: 0;
-}
 
-.ourSkills__item-btn:hover .ourSkills__item-text {
-    height: 150px;
-    transform: translateX(0);
-    opacity: 1;
-}
 
 .subscribe {
     background-color: #1cb88b;
@@ -797,6 +837,18 @@ textarea::-webkit-input-placeholder {
 
 @media screen and (max-width:470px)
 {
+
+    .menuBlock__menu{
+        display:none;
+    }
+    .burgerMenu{
+        display:block;
+    }
+    
+    .burgerMenu:hover .burgerMenu__list{
+        height:100px;
+    }
+    
     .subscribeForm input::-moz-placeholder {
         color: white;
         font-size: 20px;
