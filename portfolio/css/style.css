@@ -847,9 +847,14 @@ textarea::-webkit-input-placeholder {
     .burgerMenu{
         display:block;
     }
-    
-    .burgerMenu:hover .burgerMenu__list{
-        height:100px;
+
+    .burgerBtn-active {
+        background-color: #00ff6b;
+        color: black;
+    }
+
+    .burgerList-active{
+        height:125px;
     }
     
     .subscribeForm input::-moz-placeholder {
