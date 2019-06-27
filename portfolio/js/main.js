@@ -1,13 +1,21 @@
-var toggleBtn = document.querySelector('#burgerBtn');
+var toggleBtnBurger = document.querySelector('#burgerBtn');
 var menuList = document.querySelector('#burgerList');
 
-console.log(toggleBtn);
-console.log(menuList);
-
-console.log(menuList.innerHTML);
+var toggleBtnOurSkills = document.querySelectorAll('.ourSkills__item-btn');
 
 
-toggleBtn.onclick = function () {
-    menuList.classList.toggle('burgerList-active');
-    toggleBtn.classList.toggle('burgerBtn-active');
+toggleBtnBurger.onclick = function() {
+  menuList.classList.toggle('burgerList-active');
+  toggleBtnBurger.classList.toggle('burgerBtn-active');
+}
+
+for (var i = 0; i < toggleBtnOurSkills.length; i++) {
+  toggleBtnOurSkills[i].onclick = function() {
+    ourSkillsActive(this);
+  }
+}
+
+function ourSkillsActive(Element) {
+Element.classList.toggle('btn-active');
+Element.querySelector('.ourSkills__item-text').classList.toggle('text-active');
 }

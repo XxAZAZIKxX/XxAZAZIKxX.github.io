@@ -186,7 +186,7 @@ textarea::-webkit-input-placeholder {
 
 .burgerMenu__item a:hover {
     color: greenyellow;
-} 
+}
 
 
 .mainHeader {
@@ -617,7 +617,7 @@ textarea::-webkit-input-placeholder {
     transform: translateX(25%);
     opacity: 0;
 }
-.ourSkills__item-btn:hover .ourSkills__item-text {
+.text-active {
     height: 150px;
     transform: translateX(0);
     opacity: 1;
@@ -661,6 +661,10 @@ textarea::-webkit-input-placeholder {
 
 .ourSkills__item-btn button:hover {
     color: #5f00fb;
+}
+
+.btn-active button{
+  color: #5f00fb;
 }
 
 
@@ -856,7 +860,7 @@ textarea::-webkit-input-placeholder {
     .burgerList-active{
         height:125px;
     }
-    
+
     .subscribeForm input::-moz-placeholder {
         color: white;
         font-size: 20px;
@@ -886,7 +890,7 @@ textarea::-webkit-input-placeholder {
    .menuBlock__logo{
        min-width:unset;
    }
-    
+
     .menuBlock__list {
         flex-wrap: wrap;
     }
