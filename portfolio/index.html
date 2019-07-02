@@ -1,500 +1,512 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
+
 <body>
-    <header class="mainHeader">
-        <div class="wrapper">
-            <section class="menuBlock">
-                <div class="menuBlock__logo">
-                    <p>SSD</p>
-                </div>
-                <div class="menuBlock__menu">
-                    <ul class="menuBlock__list">
-                        <li class="menuBlock__item"><a href="#">Home</a></li>
-                        <li class="menuBlock__item"><a href="#Services">Services</a></li>
-                        <li class="menuBlock__item"><a href="#Portfolio">Portfolio</a></li>
-                        <li class="menuBlock__item"><a href="#About">About</a></li>
-                        <li class="menuBlock__item"><a href="#Contacts">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="menuBlock__btn">
-                    <button class="SignUp__btn">Sign Up</button>
-                </div>
-                <div class="burgerMenu">
-                    <button class="burgerBtn" id="burgerBtn">Menu</button>
-                    <ul class="burgerMenu__list" id="burgerList">
-                        <li class="burgerMenu__item"><a href="#">Home</a></li>
-                        <li class="burgerMenu__item"><a href="#Services">Services</a></li>
-                        <li class="burgerMenu__item"><a href="#Portfolio">Portfolio</a></li>
-                        <li class="burgerMenu__item"><a href="#About">About</a></li>
-                        <li class="burgerMenu__item"><a href="#Contacts">Contacts</a></li>
-                    </ul>
-                </div>
-            </section>
+  <header class="mainHeader">
+    <div class="wrapper">
+      <section class="menuBlock">
+        <div class="menuBlock__logo wow flip">
+          <button class="logoBtn"><p>SSD</p></button>
         </div>
-        <section class="headerContentBlock"></section>
-    </header>
-    <section class="services" id="Services">
-        <div class="wrapper">
-            <div class="servicesContainer">
-                <div class="serv-info__text-block">
-                    <div class="sectionTitle services">
-                        <h2>OUR</h2>
-                        <h2>SERVICES.</h2>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="serv-info__list">
-                    <div class="serv-list__item">
-                        <span>
-                            <img class="serv-list__img" src="img/7.png">
-                        </span>
-                        <div class="serv-list__item-text">
-                            <h1>Feature 1</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="serv-list__item">
-                        <span>
-                            <img class="serv-list__img" src="img/8.png">
-                        </span>
-                        <div class="serv-list__item-text">
-                            <h1>Feature 2</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="serv-list__item">
-                        <span>
-                            <img class="serv-list__img" src="img/9.png">
-                        </span>
-                        <div class="serv-list__item-text">
-                            <h1>Feature 3</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                    <div class="serv-list__item">
-                        <span>
-                            <img class="serv-list__img" src="img/10.png">
-                        </span>
-                        <div class="serv-list__item-text">
-                            <h1>Feature 4</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="menuBlock__menu">
+          <ul class="menuBlock__list">
+            <li class="menuBlock__item wow fadeIn" data-wow-delay=".1s"><a href="#">Home</a></li>
+            <li class="menuBlock__item wow fadeIn" data-wow-delay=".3s"><a href="#Services">Services</a></li>
+            <li class="menuBlock__item wow fadeIn" data-wow-delay=".5s"><a href="#Portfolio">Portfolio</a></li>
+            <li class="menuBlock__item wow fadeIn" data-wow-delay=".7s"><a href="#About">About</a></li>
+            <li class="menuBlock__item wow fadeIn" data-wow-delay=".9s"><a href="#Contacts">Contacts</a></li>
+          </ul>
         </div>
-    </section>
-    <nav class="servMenu">
-        <div class="wrapper">
-            <ul class="servMenu__list">
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/1.png">
-                    </a>
-                </li>
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/2.png">
-                    </a>
-                </li>
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/3.png">
-                    </a>
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/4.png">
-                    </a>
-                </li>
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/5.png">
-                    </a>
-                </li>
-                <li class="servMenu__item">
-                    <a href="#">
-                        <img src="img/6.png">
-                    </a>
-                </li>
-            </ul>
+        <div class="menuBlock__btn wow fadeInRight" data-wow-delay="1.2s">
+          <button class="SignUp__btn">Sign Up</button>
         </div>
-    </nav>
-    <section class="ourWorks" id="Portfolio">
-        <div class="wrapper">
-            <div class="sectionTitle">
-                <h2>our</h2>
-                <h2>works.</h2>
-                <span></span>
-            </div>
-            <div class="ourWorks__btns">
-                <button>All</button>
-                <button>Website</button>
-                <button>Branding</button>
-            </div>
-            <div class="ourWorks__items">
-                <div class="workCard">
-                    <div class="workCard__img">
-                        <img src="img/work1.png" />
-                    </div>
-                    <div class="workCard__descr">
-                        <h3 class="workCard__title">We are creative</h3>
-                        <p class="workCard__text">designed by Azazik | May 18, 2005</p>
-                    </div>
-                </div>
-                <div class="workCard">
-                    <div class="workCard__img">
-                        <img src="img/work2.png" />
-                    </div>
-                    <div class="workCard__descr">
-                        <h3 class="workCard__title">Folks</h3>
-                        <p class="workCard__text">designed by Azazik | April 25, 2008</p>
-                    </div>
-                </div>
-                <div class="workCard">
-                    <div class="workCard__img">
-                        <img src="img/work3.png" />
-                    </div>
-                    <div class="workCard__descr">
-                        <h3 class="workCard__title">Snap Surveys</h3>
-                        <p class="workCard__text">designed by Azazik | February 17, 2010</p>
-                    </div>
-                </div>
-                <div class="workCard">
-                    <div class="workCard__img">
-                        <img src="img/work4.png" />
-                    </div>
-                    <div class="workCard__descr">
-                        <h3 class="workCard__title">War Child</h3>
-                        <p class="workCard__text">designed by Azazik | October 3, 2014</p>
-                    </div>
-                </div>
-            </div>
+        <div class="burgerMenu">
+          <button class="burgerBtn wow fadeInRight" data-wow-delay="2s" id="burgerBtn">Menu</button>
+          <ul class="burgerMenu__list" id="burgerList">
+            <li class="burgerMenu__item"><a href="#">Home</a></li>
+            <li class="burgerMenu__item"><a href="#Services">Services</a></li>
+            <li class="burgerMenu__item"><a href="#Portfolio">Portfolio</a></li>
+            <li class="burgerMenu__item"><a href="#About">About</a></li>
+            <li class="burgerMenu__item"><a href="#Contacts">Contacts</a></li>
+          </ul>
         </div>
-    </section>
-    <section class="addInfo">
-        <div class="wrapper">
-            <div class="quotes">
-                <div class="quotes__text">
-                    <p>
-                        "Ut et justo nec lacus tempus auctor. Vestibulum eleifend metus sapien, nec ultrices lacus convallis in. Nulla laoreet, arcu in semper vestibulum, justo magna tincidunt risus, a cursus massa nulla ultrices eros. Nunc sed lorem dapibus, molestie justo in, sodales lorem. Phasellus nisi magna, suscipit eget ligula at, blandit accumsan purus."
-                    </p>
-                </div>
-                <div class="quotes__info">
-                    <div class="quotes__img">
-                        <img src="img/ava1.png" />
-                    </div>
-                    <div class="quotes__name">
-                        <p>michael joe</p>
-                    </div>
-                </div>
-                <ul class="quotes__btns">
-                    <li class="quotes__btn"><button></button></li>
-                    <li class="quotes__btn"><button></button></li>
-                    <li class="quotes__btn"><button></button></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="ourTeam" id="About">
-        <div class="wrapper">
-            <div class="sectionTitle ourTeamST">
-                <h2>Our</h2>
-                <h2>team.</h2>
-                <span></span>
-            </div>
-            <div class="ourTeam__cards">
-                <div class="TeamCard">
-                    <div class="TeamCardPhoto">
-                        <div class="TeamCardPhoto__photo">
-                            <img src="img/ava1.png" />
-                        </div>
-                        <ul class="TeamCardPhoto__icons">
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://twitter.com/" target="_blank">
-                                    <img src="img/icons/twitter.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://facebook.com/" target="_blank">
-                                    <img src="img/icons/facebook.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://instagram.com/" target="_blank">
-                                    <img src="img/icons/instagram.png" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="TeamCardInfo">
-                        <h3 class="TeamCardInfo__title">Michael Joe</h3>
-                        <p class="TeamCardInfo__prof">CEO & Founder</p>
-                        <p class="TeamCard__about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris.
-                        </p>
-                    </div>
-                </div>
-                <div class="TeamCard">
-                    <div class="TeamCardPhoto">
-                        <div class="TeamCardPhoto__photo">
-                            <img src="img/ava2.png" />
-                        </div>
-                        <ul class="TeamCardPhoto__icons">
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://twitter.com/" target="_blank">
-                                    <img src="img/icons/twitter.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://facebook.com/" target="_blank">
-                                    <img src="img/icons/facebook.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://instagram.com/" target="_blank">
-                                    <img src="img/icons/instagram.png" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="TeamCardInfo">
-                        <h3 class="TeamCardInfo__title">Jeremy Scott</h3>
-                        <p class="TeamCardInfo__prof">Designer</p>
-                        <p class="TeamCard__about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris.
-                        </p>
-                    </div>
-                </div>
-                <div class="TeamCard">
-                    <div class="TeamCardPhoto">
-                        <div class="TeamCardPhoto__photo">
-                            <img src="img/ava3.png" />
-                        </div>
-                        <ul class="TeamCardPhoto__icons">
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://twitter.com/" target="_blank">
-                                    <img src="img/icons/twitter.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://facebook.com/" target="_blank">
-                                    <img src="img/icons/facebook.png" />
-                                </a>
-                            </li>
-                            <li class="TeamCardPhoto__icon">
-                                <a href="https://instagram.com/" target="_blank">
-                                    <img src="img/icons/instagram.png" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="TeamCardInfo">
-                        <h3 class="TeamCardInfo__title">Justin West</h3>
-                        <p class="TeamCardInfo__prof">Manager</p>
-                        <p class="TeamCard__about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="addInfo">
-        <div class="wrapper">
-            <div class="infoNumbers">
-                <div class="infoNumbers__item">
-                    <div class="infoNumbers__img">
-                        <img src="img/number1.png" />
-                    </div>
-                    <div class="infoNumbers__info">
-                        <div class="infoNumbers__number">2009</div>
-                        <div class="infoNumbers__text">perspiciatis</div>
-                    </div>
-                </div>
-                <div class="infoNumbers__item">
-                    <div class="infoNumbers__img">
-                        <img src="img/number2.png" />
-                    </div>
-                    <div class="infoNumbers__info">
-                        <div class="infoNumbers__number">13,562</div>
-                        <div class="infoNumbers__text">comments</div>
-                    </div>
-                </div>
-                <div class="infoNumbers__item">
-                    <div class="infoNumbers__img">
-                        <img src="img/number3.png" />
-                    </div>
-                    <div class="infoNumbers__info">
-                        <div class="infoNumbers__number">8,710</div>
-                        <div class="infoNumbers__text">coffee cups</div>
-                    </div>
-                </div>
-                <div class="infoNumbers__item">
-                    <div class="infoNumbers__img">
-                        <img src="img/number4.png" />
-                    </div>
-                    <div class="infoNumbers__info">
-                        <div class="infoNumbers__number">715</div>
-                        <div class="infoNumbers__text">awards</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="ourSkills">
-        <div class="wrapper">
-            <div class="sectionTitle ourSkillsST">
-                <h2>OUR</h2>
-                <h2>SKILLS.</h2>
-                <span></span>
-            </div>
-            <div class="ourSkills__info">
-                <div>
-                    <div class="ourSkills__graphs">
-                        <div class="ourSkills__graph">
-                            <img src="img/skill1.png" />
-                            <p>75</p>
-                        </div>
-                        <div class="ourSkills__graph">
-                            <img src="img/skill2.png" />
-                            <p>25</p>
-                        </div>
-                        <div class="ourSkills__graph">
-                            <img src="img/skill1.png" />
-                            <p>75</p>
-                        </div>
-                        <div class="ourSkills__graph">
-                            <img src="img/skill3.png" />
-                            <p>50</p>
-                        </div>
-                    </div>
-                    <div class="ourSkills__text">
-                        <h3>something about our skills</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </div>
-                <div class="ourSkills__btns">
-                    <div class="ourSkills__item">
-                        <div class="ourSkills__item-btn">
-                            <button class="ourSkills__itemBtn">Vivamus placerat mauris</button>
-                            <div class="ourSkills__item-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit vestibulum lectus at maximus. Suspendisse eleifend dui eget nulla molestie, at aliquam libero mollis. Nunc venenatis non erat iaculis pretium.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourSkills__item">
-                        <div class="ourSkills__item-btn">
-                            <button class="ourSkills__itemBtn">Fusce sagittis vel</button>
-                            <div class="ourSkills__item-text">
-                                <p>Fusce sagittis vel libero at pulvinar. Duis egestas massa eget dolor dictum tincidunt. Nam tincidunt, diam vel vestibulum vehicula, nunc ante feugiat elit, vitae venenatis lacus libero molestie augue. Nunc accumsan in libero sed convallis. Etiam vitae lobortis eros.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourSkills__item">
-                        <div class="ourSkills__item-btn">
-                            <button class="ourSkills__itemBtn">Cras suscipit dolor purus</button>
-                            <div class="ourSkills__item-text">
-                                <p>Cras suscipit dolor purus, bibendum pulvinar neque cursus lobortis. Nam cursus accumsan nisl et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed arcu in augue ullamcorper posuere nec vitae dolor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourSkills__item">
-                        <div class="ourSkills__item-btn">
-                            <button class="ourSkills__itemBtn">Donec eget tristique</button>
-                            <div class="ourSkills__item-text">
-                                <p>Donec eget tristique velit. Aenean rhoncus magna eget dolor tincidunt euismod. Integer varius metus ut justo blandit fermentum. Sed mollis blandit nisl at ultrices.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ourSkills__item">
-                        <div class="ourSkills__item-btn">
-                            <button class="ourSkills__itemBtn">Vestibulum at urna</button>
-                            <div class="ourSkills__item-text">
-                                <p>Vestibulum at urna sem. Cras sed dictum purus, ac iaculis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="subscribe">
-        <div class="wrapper">
-            <form class="subscribeForm">
-                <input placeholder="Enter your email here..." type="email" name="subscribeEmail" />
-                <button>Subscribe</button>
-            </form>
-        </div>
+      </section>
     </div>
-    <section class="contactUs" id="Contacts">
-        <div class="wrapper">
-            <div class="sectionTitle">
-                <h2>CONTACT</h2>
-                <h2>US.</h2>
-                <span></span>
-            </div>
-            <div class="contactUs-info">
-                <p>123A Building, Road Street, Orlando District, US </p>
-                <p>+01 234 567 89</p>
-                <ul>
-                    <li><img src="img/twitter.png" /></li>
-                    <li><img src="img/facebook.png" /></li>
-                    <li><img src="img/googleplus.png" /></li>
-                    <li><img src="img/pinterest.png" /></li>
-                    <li><img src="img/instagram.png" /></li>
-                    <li><img src="img/youtube.png" /></li>
-                    <li><img src="img/skype.png" /></li>
-                    <li><img src="img/browser.png" /></li>
-                </ul>
-            </div>
-            <form class="contactUs-form">
-                <div class="contactUs-inputFields">
-                    <div class="inputFields__small">
-                        <input type="email" placeholder="EMAIL" name="contactEmail" />
-                        <input type="text" placeholder="NAME" name="contactName" />
-                    </div>
-                    <div class="inputFields__big">
-                        <textarea type="text" placeholder="MESSAGE" name="contactMessage"></textarea>
-                        <button>Submit</button>
-                    </div>
-                </div>
-            </form>
+    <section class="headerContentBlock"></section>
+  </header>
+  <section class="services" id="Services">
+    <div class="wrapper">
+      <div class="servicesContainer">
+        <div class="serv-info__text-block">
+          <div class="sectionTitle services wow fadeInLeft">
+            <h2>OUR</h2>
+            <h2>SERVICES.</h2>
+            <span></span>
+          </div>
         </div>
-    </section>
-    <footer class="mainFooter">
-        <div class="wrapper">
-            <div class="menuBlock__logo">
-                <div class="footerLogo">
-                    <p>SSD</p>
-                </div>
+        <div class="serv-info__list">
+          <div class="serv-list__item wow flipInX" data-wow-delay=".5s">
+            <span>
+              <img class="serv-list__img" src="img/7.png">
+            </span>
+            <div class="serv-list__item-text">
+              <h1>Feature 1</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div class="footerText">
-                <p>© 2019 SSD. All rights resevered.</p>
-                <p>Design by AZAZIK</p>
+          </div>
+          <div class="serv-list__item wow flipInX" data-wow-delay=".8s">
+            <span>
+              <img class="serv-list__img" src="img/8.png">
+            </span>
+            <div class="serv-list__item-text">
+              <h1>Feature 2</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div class="footerBtn">
-                <a href="#">
-                    <img src="img/to-top.png" />
+          </div>
+          <div class="serv-list__item wow flipInX" data-wow-delay="1.1s">
+            <span>
+              <img class="serv-list__img" src="img/9.png">
+            </span>
+            <div class="serv-list__item-text">
+              <h1>Feature 3</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div class="serv-list__item wow flipInX" data-wow-delay="1.4s">
+            <span>
+              <img class="serv-list__img" src="img/10.png">
+            </span>
+            <div class="serv-list__item-text">
+              <h1>Feature 4</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="servMenu">
+    <div class="wrapper">
+      <ul class="servMenu__list">
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s">
+          <a href="#">
+            <img src="img/1.png">
+          </a>
+        </li>
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s" data-wow-delay=".2s">
+          <a href="#">
+            <img src="img/2.png">
+          </a>
+        </li>
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s" data-wow-delay=".4s">
+          <a href="#">
+            <img src="img/3.png">
+          </a>
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s" data-wow-delay=".6s">
+          <a href="#">
+            <img src="img/4.png">
+          </a>
+        </li>
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s" data-wow-delay=".8s">
+          <a href="#">
+            <img src="img/5.png">
+          </a>
+        </li>
+        <li class="servMenu__item wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1s">
+          <a href="#">
+            <img src="img/6.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="ourWorks" id="Portfolio">
+    <div class="wrapper">
+      <div class="sectionTitle wow fadeInLeft">
+        <h2>our</h2>
+        <h2>works.</h2>
+        <span></span>
+      </div>
+      <div class="ourWorks__btns">
+        <button class="wow bounceInRight">All</button>
+        <button class="wow bounceInRight" data-wow-delay=".3s">Website</button>
+        <button class="wow bounceInRight" data-wow-delay=".6s">Branding</button>
+      </div>
+      <div class="ourWorks__items">
+        <div class="workCard wow fadeIn">
+          <div class="workCard__img">
+            <img src="img/work1.png" />
+          </div>
+          <div class="workCard__descr">
+            <h3 class="workCard__title">We are creative</h3>
+            <p class="workCard__text">designed by Azazik | May 18, 2005</p>
+          </div>
+        </div>
+        <div class="workCard wow fadeIn" data-wow-delay=".2s">
+          <div class="workCard__img">
+            <img src="img/work2.png" />
+          </div>
+          <div class="workCard__descr">
+            <h3 class="workCard__title">Folks</h3>
+            <p class="workCard__text">designed by Azazik | April 25, 2008</p>
+          </div>
+        </div>
+        <div class="workCard wow fadeIn" data-wow-delay=".4s">
+          <div class="workCard__img">
+            <img src="img/work3.png" />
+          </div>
+          <div class="workCard__descr">
+            <h3 class="workCard__title">Snap Surveys</h3>
+            <p class="workCard__text">designed by Azazik | February 17, 2010</p>
+          </div>
+        </div>
+        <div class="workCard wow fadeIn" data-wow-delay=".6s">
+          <div class="workCard__img">
+            <img src="img/work4.png" />
+          </div>
+          <div class="workCard__descr">
+            <h3 class="workCard__title">War Child</h3>
+            <p class="workCard__text">designed by Azazik | October 3, 2014</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="addInfo wow fadeIn" data-wow-offset="250">
+    <div class="wrapper">
+      <div class="quotes">
+        <div class="quotes__text">
+          <p>
+            "Ut et justo nec lacus tempus auctor. Vestibulum eleifend metus sapien, nec ultrices lacus convallis in. Nulla laoreet, arcu in semper vestibulum, justo magna tincidunt risus, a cursus massa nulla ultrices eros. Nunc sed lorem dapibus,
+            molestie justo in, sodales lorem. Phasellus nisi magna, suscipit eget ligula at, blandit accumsan purus."
+          </p>
+        </div>
+        <div class="quotes__info">
+          <div class="quotes__img">
+            <img src="img/ava1.png" />
+          </div>
+          <div class="quotes__name">
+            <p>michael joe</p>
+          </div>
+        </div>
+        <ul class="quotes__btns">
+          <li class="quotes__btn wow fadeIn" data-wow-offset="125"><button></button></li>
+          <li class="quotes__btn wow fadeIn" data-wow-delay=".4s" data-wow-offset="125"><button></button></li>
+          <li class="quotes__btn wow fadeIn" data-wow-delay=".8s" data-wow-offset="125"><button></button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="ourTeam" id="About">
+    <div class="wrapper">
+      <div class="sectionTitle ourTeamST wow fadeInLeft" data-wow-offset="250">
+        <h2>Our</h2>
+        <h2>team.</h2>
+        <span></span>
+      </div>
+      <div class="ourTeam__cards">
+        <div class="TeamCard wow fadeIn" data-wow-offset="400">
+          <div class="TeamCardPhoto">
+            <div class="TeamCardPhoto__photo">
+              <img src="img/ava1.png" />
+            </div>
+            <ul class="TeamCardPhoto__icons">
+              <li class="TeamCardPhoto__icon">
+                <a href="https://twitter.com/" target="_blank">
+                  <img src="img/icons/twitter.png" />
                 </a>
-            </div>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://facebook.com/" target="_blank">
+                  <img src="img/icons/facebook.png" />
+                </a>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://instagram.com/" target="_blank">
+                  <img src="img/icons/instagram.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="TeamCardInfo">
+            <h3 class="TeamCardInfo__title">Michael Joe</h3>
+            <p class="TeamCardInfo__prof">CEO & Founder</p>
+            <p class="TeamCard__about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+        <div class="TeamCard wow fadeIn" data-wow-offset="400" data-wow-delay=".5s">
+          <div class="TeamCardPhoto">
+            <div class="TeamCardPhoto__photo">
+              <img src="img/ava2.png" />
+            </div>
+            <ul class="TeamCardPhoto__icons">
+              <li class="TeamCardPhoto__icon">
+                <a href="https://twitter.com/" target="_blank">
+                  <img src="img/icons/twitter.png" />
+                </a>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://facebook.com/" target="_blank">
+                  <img src="img/icons/facebook.png" />
+                </a>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://instagram.com/" target="_blank">
+                  <img src="img/icons/instagram.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="TeamCardInfo">
+            <h3 class="TeamCardInfo__title">Jeremy Scott</h3>
+            <p class="TeamCardInfo__prof">Designer</p>
+            <p class="TeamCard__about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
+        </div>
+        <div class="TeamCard wow fadeIn" data-wow-offset="400" data-wow-delay="1s">
+          <div class="TeamCardPhoto">
+            <div class="TeamCardPhoto__photo">
+              <img src="img/ava3.png" />
+            </div>
+            <ul class="TeamCardPhoto__icons">
+              <li class="TeamCardPhoto__icon">
+                <a href="https://twitter.com/" target="_blank">
+                  <img src="img/icons/twitter.png" />
+                </a>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://facebook.com/" target="_blank">
+                  <img src="img/icons/facebook.png" />
+                </a>
+              </li>
+              <li class="TeamCardPhoto__icon">
+                <a href="https://instagram.com/" target="_blank">
+                  <img src="img/icons/instagram.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="TeamCardInfo">
+            <h3 class="TeamCardInfo__title">Justin West</h3>
+            <p class="TeamCardInfo__prof">Manager</p>
+            <p class="TeamCard__about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="addInfo wow fadeIn" data-wow-offset="250">
+    <div class="wrapper">
+      <div class="infoNumbers">
+        <div class="infoNumbers__item wow flipInY" data-wow-delay=".6s" data-wow-offset="200">
+          <div class="infoNumbers__img">
+            <img src="img/number1.png" />
+          </div>
+          <div class="infoNumbers__info">
+            <div class="infoNumbers__number">2009</div>
+            <div class="infoNumbers__text">perspiciatis</div>
+          </div>
+        </div>
+        <div class="infoNumbers__item wow flipInY" data-wow-delay=".9s" data-wow-offset="200">
+          <div class="infoNumbers__img">
+            <img src="img/number2.png" />
+          </div>
+          <div class="infoNumbers__info">
+            <div class="infoNumbers__number">13,562</div>
+            <div class="infoNumbers__text">comments</div>
+          </div>
+        </div>
+        <div class="infoNumbers__item wow flipInY" data-wow-delay="1.2s" data-wow-offset="200">
+          <div class="infoNumbers__img">
+            <img src="img/number3.png" />
+          </div>
+          <div class="infoNumbers__info">
+            <div class="infoNumbers__number">8,710</div>
+            <div class="infoNumbers__text">coffee cups</div>
+          </div>
+        </div>
+        <div class="infoNumbers__item wow flipInY" data-wow-delay="1.5s" data-wow-offset="200">
+          <div class="infoNumbers__img">
+            <img src="img/number4.png" />
+          </div>
+          <div class="infoNumbers__info">
+            <div class="infoNumbers__number">715</div>
+            <div class="infoNumbers__text">awards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ourSkills">
+    <div class="wrapper">
+      <div class="sectionTitle ourSkillsST wow fadeInLeft" data-wow-offset="250">
+        <h2>OUR</h2>
+        <h2>SKILLS.</h2>
+        <span></span>
+      </div>
+      <div class="ourSkills__info">
+        <div>
+          <div class="ourSkills__graphs">
+            <div class="ourSkills__graph wow rotateIn" data-wow-offset="250">
+              <img src="img/skill1.png" />
+              <p>75</p>
+            </div>
+            <div class="ourSkills__graph wow rotateIn" data-wow-offset="250">
+              <img src="img/skill2.png" />
+              <p>25</p>
+            </div>
+            <div class="ourSkills__graph wow rotateIn" data-wow-offset="250">
+              <img src="img/skill1.png" />
+              <p>75</p>
+            </div>
+            <div class="ourSkills__graph wow rotateIn" data-wow-offset="250">
+              <img src="img/skill3.png" />
+              <p>50</p>
+            </div>
+          </div>
+          <div class="ourSkills__text wow fadeIn" data-wow-offset="200">
+            <h3>something about our skills</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+        <div class="ourSkills__btns">
+          <div class="ourSkills__item wow slideInRight" data-wow-offset="300" data-wow-duration=".5s">
+            <div class="ourSkills__item-btn">
+              <button class="ourSkills__itemBtn">Vivamus placerat mauris</button>
+              <div class="ourSkills__item-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit vestibulum lectus at maximus. Suspendisse eleifend dui eget nulla molestie, at aliquam libero mollis. Nunc venenatis non erat iaculis pretium.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ourSkills__item wow slideInRight" data-wow-delay=".3s" data-wow-offset="300" data-wow-duration=".5s">
+            <div class="ourSkills__item-btn">
+              <button class="ourSkills__itemBtn">Fusce sagittis vel</button>
+              <div class="ourSkills__item-text">
+                <p>Fusce sagittis vel libero at pulvinar. Duis egestas massa eget dolor dictum tincidunt. Nam tincidunt, diam vel vestibulum vehicula, nunc ante feugiat elit, vitae venenatis lacus libero molestie augue. Nunc accumsan in libero sed
+                  convallis. Etiam vitae lobortis eros.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ourSkills__item wow slideInRight" data-wow-delay=".6s" data-wow-offset="300" data-wow-duration=".5s">
+            <div class="ourSkills__item-btn">
+              <button class="ourSkills__itemBtn">Cras suscipit dolor purus</button>
+              <div class="ourSkills__item-text">
+                <p>Cras suscipit dolor purus, bibendum pulvinar neque cursus lobortis. Nam cursus accumsan nisl et cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed arcu in augue
+                  ullamcorper posuere nec vitae dolor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ourSkills__item wow slideInRight" data-wow-delay=".9s" data-wow-offset="250" data-wow-duration=".5s">
+            <div class="ourSkills__item-btn">
+              <button class="ourSkills__itemBtn">Donec eget tristique</button>
+              <div class="ourSkills__item-text">
+                <p>Donec eget tristique velit. Aenean rhoncus magna eget dolor tincidunt euismod. Integer varius metus ut justo blandit fermentum. Sed mollis blandit nisl at ultrices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ourSkills__item wow slideInRight" data-wow-delay="1.2s" data-wow-offset="200" data-wow-duration=".5s">
+            <div class="ourSkills__item-btn">
+              <button class="ourSkills__itemBtn">Vestibulum at urna</button>
+              <div class="ourSkills__item-text">
+                <p>Vestibulum at urna sem. Cras sed dictum purus, ac iaculis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="subscribe wow fadeIn" data-wow-offset="250">
+    <div class="wrapper">
+      <form class="subscribeForm">
+        <input placeholder="Enter your email here..." type="email" name="subscribeEmail" />
+        <button>Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <section class="contactUs" id="Contacts">
+    <div class="wrapper">
+      <div class="sectionTitle wow fadeInLeft" data-wow-offset="250">
+        <h2>CONTACT</h2>
+        <h2>US.</h2>
+        <span></span>
+      </div>
+      <div class="contactUs-info wow fadeIn" data-wow-offset="250" data-wow-duration="2s">
+        <p>123A Building, Road Street, Orlando District, US </p>
+        <p>+01 234 567 89</p>
+        <ul>
+          <li><img src="img/twitter.png" /></li>
+          <li><img src="img/facebook.png" /></li>
+          <li><img src="img/googleplus.png" /></li>
+          <li><img src="img/pinterest.png" /></li>
+          <li><img src="img/instagram.png" /></li>
+          <li><img src="img/youtube.png" /></li>
+          <li><img src="img/skype.png" /></li>
+          <li><img src="img/browser.png" /></li>
+        </ul>
+      </div>
+      <form class="contactUs-form">
+        <div class="contactUs-inputFields">
+          <div class="inputFields__small">
+            <input type="email" placeholder="EMAIL" name="contactEmail" class="wow fadeInUp" data-wow-offset="175" />
+            <input type="text" placeholder="NAME" name="contactName" class="wow fadeInUp" data-wow-offset="175" />
+          </div>
+          <div class="inputFields__big">
+            <textarea type="text" placeholder="MESSAGE" name="contactMessage" class="wow fadeInUp" data-wow-delay=".5s" data-wow-offset="120"></textarea>
+            <button class="wow fadeInRight" data-wow-offset="120">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="mainFooter">
+    <div class="wrapper">
+      <div class="menuBlock__logo">
+        <div class="footerLogo wow flip" data-wow-offset="100">
+          <button class="logoBtn"><p>SSD</p></button>
+        </div>
+      </div>
+      <div class="footerText wow fadeIn" data-wow-duration="2s" data-wow-offset="35">
+        <p>© 2019 SSD. All rights resevered.</p>
+        <p>Design by AZAZIK</p>
+      </div>
+      <div class="footerBtn wow heartBeat" data-wow-delay="3s" data-wow-iteration="3">
+        <a href="#">
+          <img src="img/to-top.png" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
+
 </html>
