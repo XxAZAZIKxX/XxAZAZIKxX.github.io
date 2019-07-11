@@ -7,14 +7,38 @@
   <title></title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
 <body>
+  <div class="callReq">
+    <div class="callReq__notif hidden">
+      <h4>Need Help?</h4>
+      <p>Request a call</p>
+    </div>
+    <div class="callBackBtn">
+      <div class="callBackBtn__item callBackBtn__item-icon">
+        <i class="fas fa-phone-alt"></i>
+      </div>
+      <p class="callBackBtn__item callBackBtn__item-text">
+        кнопка<br>связи
+      </p>
+    </div>
+    <form class="callBackWindow animated hidden">
+      <button class="callBackWindow__exit"><i class="fas fa-times"></i></button>
+      <input type="text" name="callName" class="callBackWindow__input" placeholder="Name">
+      <input type="number" name="callNumber" class="callBackWindow__input" placeholder="Number">
+      <textarea type="text" name="callMessage" class="callBackWindow__textarea" placeholder="Message"></textarea>
+      <button class="callBackWindow__btn"><i class="fas fa-check"></i></button>
+    </form>
+  </div>
   <header class="mainHeader">
     <div class="wrapper">
       <section class="menuBlock">
         <div class="menuBlock__logo wow flip">
-          <button class="logoBtn"><p>SSD</p></button>
+          <button class="logoBtn">
+            <p>SSD</p>
+          </button>
         </div>
         <div class="menuBlock__menu">
           <ul class="menuBlock__list">
@@ -40,7 +64,100 @@
         </div>
       </section>
     </div>
-    <section class="headerContentBlock"></section>
+    <section class="headerContentBlock">
+      <div class="slider">
+        <div class="slider__content">
+          <div class="sliderItem sliderItem-active">
+            <div class="sliderItem__img">
+              <img class="slider__img" src="img/slider_img/1.png">
+            </div>
+            <div class="sliderItemContent">
+              <div class="wrapper">
+                <h5 class="sliderItemContent__title">Some Title</h5>
+                <p class="sliderItemContent__textBlock">
+                  Some Text
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem">
+            <div class="sliderItem__img">
+              <img class="slider__img" src="img/slider_img/2.png">
+            </div>
+            <div class="sliderItemContent">
+              <div class="wrapper">
+                <h5 class="sliderItemContent__title">Some Title</h5>
+                <p class="sliderItemContent__textBlock">
+                  Some Text
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem">
+            <div class="sliderItem__img">
+              <img class="slider__img" src="img/slider_img/3.png">
+            </div>
+            <div class="sliderItemContent">
+              <div class="wrapper">
+                <h5 class="sliderItemContent__title">Some Title</h5>
+                <p class="sliderItemContent__textBlock">
+                  Some Text
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem">
+            <div class="sliderItem__img">
+              <img class="slider__img" src="img/slider_img/4.png">
+            </div>
+            <div class="sliderItemContent">
+              <div class="wrapper">
+                <h5 class="sliderItemContent__title">Some Title</h5>
+                <p class="sliderItemContent__textBlock">
+                  Some Text
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem">
+            <div class="sliderItem__img">
+              <img class="slider__img" src="img/slider_img/5.png">
+            </div>
+            <div class="sliderItemContent">
+              <div class="wrapper">
+                <h5 class="sliderItemContent__title">Some Title</h5>
+                <p class="sliderItemContent__textBlock">
+                  Some Text
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="sliderBtns__item sliderBtns__item-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        <button class="sliderBtns__item sliderBtns__item-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <ul class="sliderDots__items">
+          <li class="sliderDots__item sliderDots__item-active" data-index="0">
+            <img class="slider__img" src="img/slider_img/1.png">
+          </li>
+          <li class="sliderDots__item" data-index="1">
+            <img class="slider__img" src="img/slider_img/2.png">
+          </li>
+          <li class="sliderDots__item" data-index="2">
+            <img class="slider__img" src="img/slider_img/3.png">
+          </li>
+          <li class="sliderDots__item" data-index="3">
+            <img class="slider__img" src="img/slider_img/4.png">
+          </li>
+          <li class="sliderDots__item" data-index="4">
+            <img class="slider__img" src="img/slider_img/5.png">
+          </li>
+        </ul>
+      </div>
+    </section>
   </header>
   <section class="services" id="Services">
     <div class="wrapper">
@@ -136,12 +253,12 @@
         <span></span>
       </div>
       <div class="ourWorks__btns">
-        <button class="wow bounceInRight">All</button>
-        <button class="wow bounceInRight" data-wow-delay=".3s">Website</button>
-        <button class="wow bounceInRight" data-wow-delay=".6s">Branding</button>
+        <button class="ourWorksBtn wow bounceInRight ourWorksBtn-active" data-type="all">All</button>
+        <button class="ourWorksBtn wow bounceInRight" data-wow-delay=".3s" data-type="website">Website</button>
+        <button class="ourWorksBtn wow bounceInRight" data-wow-delay=".6s" data-type="branding">Branding</button>
       </div>
       <div class="ourWorks__items">
-        <div class="workCard wow fadeIn">
+        <div class="workCard wow fadeIn" data-type="website">
           <div class="workCard__img">
             <img src="img/work1.png" />
           </div>
@@ -150,7 +267,7 @@
             <p class="workCard__text">designed by Azazik | May 18, 2005</p>
           </div>
         </div>
-        <div class="workCard wow fadeIn" data-wow-delay=".2s">
+        <div class="workCard wow fadeIn" data-type="website" data-wow-delay=".2s">
           <div class="workCard__img">
             <img src="img/work2.png" />
           </div>
@@ -159,7 +276,7 @@
             <p class="workCard__text">designed by Azazik | April 25, 2008</p>
           </div>
         </div>
-        <div class="workCard wow fadeIn" data-wow-delay=".4s">
+        <div class="workCard wow fadeIn" data-type="branding" data-wow-delay=".4s">
           <div class="workCard__img">
             <img src="img/work3.png" />
           </div>
@@ -168,7 +285,7 @@
             <p class="workCard__text">designed by Azazik | February 17, 2010</p>
           </div>
         </div>
-        <div class="workCard wow fadeIn" data-wow-delay=".6s">
+        <div class="workCard wow fadeIn" data-type="branding" data-wow-delay=".6s">
           <div class="workCard__img">
             <img src="img/work4.png" />
           </div>
@@ -473,12 +590,12 @@
       <form class="contactUs-form">
         <div class="contactUs-inputFields">
           <div class="inputFields__small">
-            <input type="email" placeholder="EMAIL" name="contactEmail" class="wow fadeInUp" data-wow-offset="175" />
-            <input type="text" placeholder="NAME" name="contactName" class="wow fadeInUp" data-wow-offset="175" />
+            <input type="email" placeholder="EMAIL" name="contactEmail" class="contactUsInput wow fadeInUp" data-wow-offset="175" />
+            <input type="text" placeholder="NAME" name="contactName" class="contactUsInput wow fadeInUp" data-wow-offset="175" />
           </div>
           <div class="inputFields__big">
-            <textarea type="text" placeholder="MESSAGE" name="contactMessage" class="wow fadeInUp" data-wow-delay=".5s" data-wow-offset="120"></textarea>
-            <button class="wow fadeInRight" data-wow-offset="120">Submit</button>
+            <textarea type="text" placeholder="MESSAGE" name="contactMessage" class="contactUsTextarea wow fadeInUp" data-wow-delay=".5s" data-wow-offset="120"></textarea>
+            <button class="submitBtn wow fadeInRight" data-wow-offset="120">Submit</button>
           </div>
         </div>
       </form>
@@ -488,7 +605,9 @@
     <div class="wrapper">
       <div class="menuBlock__logo">
         <div class="footerLogo wow flip" data-wow-offset="100">
-          <button class="logoBtn"><p>SSD</p></button>
+          <button class="logoBtn">
+            <p>SSD</p>
+          </button>
         </div>
       </div>
       <div class="footerText wow fadeIn" data-wow-duration="2s" data-wow-offset="35">
@@ -502,6 +621,10 @@
       </div>
     </div>
   </footer>
+  <div class="modalWindowTY animated hidden">
+    <h3>Thanks you</h3>
+    <p>We will contact you shortly</p>
+  </div>
   <script src="js/main.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
