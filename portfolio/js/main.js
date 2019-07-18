@@ -26,17 +26,22 @@ var sortBtns = doc.querySelectorAll('.ourWorksBtn'),
   workCards = doc.querySelectorAll('.workCard');
 
 var sliderBlock = doc.querySelector('.slider__content');
-var sliderImgArr = ['1.png','2.png','3.png','4.png','5.png'];
-
-for (var i = 0; i < sliderImgArr.length; i++) {
-  
-}
+var sliderImgArr = ['1.png', '2.png', '3.png', '4.png', '5.png'];
 
 var sliderItems = doc.querySelectorAll('.sliderItem'),
   countSlides = sliderItems.length,
   sliderBtns = doc.querySelectorAll('.sliderBtns__item'),
   dotsItems = doc.querySelectorAll('.sliderDots__item'),
   activeSlideIndex = 0;
+
+var header = doc.querySelector('.mainHeader');
+
+document.onscroll = function() {
+  header.classList.remove('mainHeader-scrolled');
+  if (header.getBoundingClientRect().top + pageYOffset > 100) {
+    header.classList.add('mainHeader-scrolled');
+  }
+}
 
 for (var i = 0; i < sliderBtns.length; i++) {
   sliderBtns[i].onclick = function() {
@@ -62,6 +67,7 @@ for (var i = 0; i < dotsItems.length; i++) {
     showActiveSlide(this.getAttribute('data-index'));
   }
 }
+
 
 function showNextSlide() {
   if (activeSlideIndex < countSlides - 1) {
